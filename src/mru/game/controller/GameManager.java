@@ -170,22 +170,22 @@ public class GameManager {
 	 highestWins = p.getNumOfWins();
 	 }
 	 }
-	 // Display all the players with the highest number of wins
-	 System.out.println(" - TOP PLAYERS - ");
-	 System.out.println("+==============================+==========================+");
-	 System.out.println("| NAME |# WINS |");
-	 System.out.println("+==============================+==========================+");
-	
-	 for (Player p : players) {
-	 if (p.getNumOfWins() == highestWins) {
-System.out.format("| %-16s | %9d |\n", p.getName(), p.getNumOfWins());
-	 System.out.println("+------------------------------+--------------------------+");
-	
-	 }
-	
-	
-	 }
-	 appMen.waitEnter();
+		//Display all the players with the highest number of wins.
+	 System.out.println(" -    TOP PLAYERS -   ");
+   	    System.out.println("+==============================+==========================+");
+   	    System.out.println("| NAME                         |# WINS                    |");
+   	    System.out.println("+==============================+==========================+");
+   	    
+   	    for (Player p : players) {
+   	        if (p.getNumOfWins() == highestWins) {
+   	        	System.out.format("| %-16s             | %9d                |\n", p.getName(), p.getNumOfWins());
+   	            System.out.println("+------------------------------+--------------------------+");
+   	          
+   	        }
+   	   
+	           
+   	    } 
+   	  appMen.waitEnter();
 	
 	
 	
