@@ -99,6 +99,7 @@ public class GameManager {
             }
 
             System.out.println("Your current balance: $" + p.getBalance());
+            System.out.println(" ");
             
             if (p.getBalance() <= 0) {
                 System.out.println("Sorry, you don't have enough balance to continue playing.");
@@ -116,8 +117,6 @@ public class GameManager {
         //check and print cards
    
         Card currentCard = myDeck.getDeck().remove(0);
-        
-        // A comment
         
         currentCard = myDeck.getDeck().remove(0);
         
@@ -172,22 +171,22 @@ public class GameManager {
 	 highestWins = p.getNumOfWins();
 	 }
 	 }
-	 // Display all the players with the highest number of wins
-	 System.out.println(" - TOP PLAYERS - ");
-	 System.out.println("+==============================+==========================+");
-	 System.out.println("| NAME |# WINS |");
-	 System.out.println("+==============================+==========================+");
-	
-	 for (Player p : players) {
-	 if (p.getNumOfWins() == highestWins) {
-System.out.format("| %-16s | %9d |\n", p.getName(), p.getNumOfWins());
-	 System.out.println("+------------------------------+--------------------------+");
-	
-	 }
-	
-	
-	 }
-	 appMen.waitEnter();
+		//Display all the players with the highest number of wins.
+	 System.out.println(" -    TOP PLAYERS -   ");
+   	    System.out.println("+==============================+==========================+");
+   	    System.out.println("| NAME                         |# WINS                    |");
+   	    System.out.println("+==============================+==========================+");
+   	    
+   	    for (Player p : players) {
+   	        if (p.getNumOfWins() == highestWins) {
+   	        	System.out.format("| %-16s             | %9d                |\n", p.getName(), p.getNumOfWins());
+   	            System.out.println("+------------------------------+--------------------------+");
+   	          
+   	        }
+   	   
+	           
+   	    } 
+   	  appMen.waitEnter();
 	
 	
 	
@@ -221,4 +220,3 @@ System.out.format("| %-16s | %9d |\n", p.getName(), p.getNumOfWins());
 		}
 	}
 }
-

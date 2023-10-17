@@ -96,7 +96,7 @@ public class PuntoBancoGame {
 		if (playerScore <= 5) {
 			playerCard3 = drawCard();
 			playerScore = calculateHandValue(playerCard1, playerCard2, playerCard3);
-			System.out.println("Player draws: " + playerCard3 + ". New Score: " + playerScore);
+			//System.out.println("Player draws: " + playerCard3 + ". New Score: " + playerScore);
 		}
 
 		// Step 4: Banker draws third card based on certain conditions
@@ -105,12 +105,12 @@ public class PuntoBancoGame {
 			if (shouldBankerDrawThirdCard(playerCard3, bankerScore)) {
 				bankerCard3 = drawCard();
 				bankerScore = calculateHandValue(bankerCard1, bankerCard2, bankerCard3);
-				System.out.println("Banker draws: " + bankerCard3 + ". New Score: " + bankerScore);
+				//System.out.println("Banker draws: " + bankerCard3 + ". New Score: " + bankerScore);
 			}
 		} else if (bankerScore <= 5) {
 			bankerCard3 = drawCard();
 			bankerScore = calculateHandValue(bankerCard1, bankerCard2, bankerCard3);
-			System.out.println("Banker draws: " + bankerCard3 + ". New Score: " + bankerScore);
+			//System.out.println("Banker draws: " + bankerCard3 + ". New Score: " + bankerScore);
 		}
 
 		// ... [Keep your existing code for drawing cards and calculating scores]
@@ -138,15 +138,15 @@ public class PuntoBancoGame {
 			// System.out.println(String.format("|%-25s|%20s|", "", ""));
 		}
 
-		System.out.println(String.format("|PLAYER POINTS: %-10d|Banker POINTS: %-10d|", playerScore, bankerScore));
-		System.out.println("==============================================+");
+		System.out.println(String.format("|PLAYER POINTS: %-10d|Banker POINTS: %-5d|", playerScore, bankerScore));
+		System.out.println("+==============================================+");
 		System.out.println();
 		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		char result = decideWinner(playerScore, bankerScore);
 		System.out.println("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
 		System.out.println();
 		System.out.println();
-		System.out.print("Do you want to play again(Y/N)? ");
+		//System.out.print("Do you want to play again(Y/N)? ");
 		return result;
 
 	}

@@ -40,18 +40,19 @@ public class AppMenu {
     
 
   //Displays the player information
-  public void showPlayer(Player ply) {
-  	 System.out.println(" - PLAYERS INFO - ");
-  	 System.out.println("+==============================+==========================+=================================+");
-  	 System.out.println("| NAME |# WINS |BALANCE |");
-  System.out.println("+==============================+==========================+=================================+");
-  	
-  	 System.out.format("| %-26s | %-9d | $%-24d | \n ", ply.getName(), ply.getNumOfWins(), ply.getBalance());
-  	 System.out.println("+------------------------------+--------------------------+---------------------------------+");
-  	 System.out.println("Press \"Enter\" to continue...");{
-  	 input.nextLine();
-  	 }
-  }
+    public void showPlayer(Player ply) {
+ 	   System.out.println(" -    PLAYERS INFO -   ");
+   	   System.out.println("+==============================+==========================+=================================+");
+   	   System.out.println("| NAME                         |# WINS                    |BALANCE                          |");
+        System.out.println("+==============================+==========================+=================================+");
+        
+   	   
+   	   System.out.format("| %-26s   | %-9d                |  $%-24d      |                \n  ",   ply.getName(), ply.getNumOfWins(), ply.getBalance());
+   	   System.out.println("+------------------------------+--------------------------+---------------------------------+");
+   	   System.out.println("Press \"Enter\" to continue...");{
+   	   input.nextLine();
+   	   }
+    }       
 
 
     public int promptBalance() {
