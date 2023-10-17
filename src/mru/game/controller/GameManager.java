@@ -117,6 +117,8 @@ public class GameManager {
    
         Card currentCard = myDeck.getDeck().remove(0);
         
+        // A comment
+        
         currentCard = myDeck.getDeck().remove(0);
         
         
