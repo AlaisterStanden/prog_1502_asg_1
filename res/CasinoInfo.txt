@@ -1,0 +1,7 @@
+Ali,75,10
+Khosro,1639,18
+Eli,1000,18
+l,100,0
+bingus,199,0
+bingus the second,2,0
+sir bingus the third,3,0
